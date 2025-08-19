@@ -19,7 +19,7 @@ section.section h2 { font-size:20px; margin:0 0 12px; border-left:3px solid var(
 .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:var(--gap); }
 .card { perspective:1000px; }
 .card-inner { position:relative; width:100%; padding-top:130%; transform-style:preserve-3d; transition:transform .6s; }
-.card.is-flipped .card-inner, .card:focus .card-inner { transform:rotateY(180deg); }
+.card.is-flipped .card-inner { transform:rotateY(180deg); } 
 .card-front, .card-back { position:absolute; inset:0; backface-visibility:hidden; border-radius:12px; overflow:hidden; background:var(--card); border:1px solid #273043; }
 .card-front img, .card-front .ph { width:100%; height:100%; object-fit:cover; display:flex; align-items:center; justify-content:center; color:var(--muted); }
 .card-back { transform:rotateY(180deg); display:flex; flex-direction:column; }
@@ -563,9 +563,10 @@ footer { color:var(--muted); font-size:12px; padding:24px 16px; border-top:1px s
   <footer class="container">Generated from Which animals can we see in Kenya.md</footer>
   <script>
 // toggle flip on click or Enter key
-addEventListener('click', (e)=>{
-  const card = e.target.closest('.card');
-  if(card) card.classList.toggle('is-flipped');
+document.querySelectorAll('.card').forEach(card=>{
+  card.addEventListener('click', ()=>{
+    card.classList.toggle('is-flipped');
+  });
 });
 addEventListener('keydown', (e)=>{
   if((e.key==='Enter' || e.key===' ') && e.target.classList.contains('card')){
