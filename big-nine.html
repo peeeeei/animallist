@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Big Nine - Kenya Gallery</title>
+  <style>
+:root { --bg:#0f1216; --card:#151a21; --text:#e6e8eb; --muted:#9aa3ad; --accent:#2dd4bf; --gap:16px; }
+* { box-sizing: border-box; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'PingFang SC','Helvetica Neue',Arial,'Noto Sans'; background:var(--bg); color:var(--text); }
+header { position:sticky; top:0; backdrop-filter:saturate(180%) blur(10px); background:rgba(15,18,22,.7); border-bottom:1px solid #1f2430; z-index:10; }
+.container { max-width:1200px; margin:0 auto; padding:16px; }
+h1 { margin:8px 0; font-size:22px; }
+nav { display:flex; gap:12px; flex-wrap:wrap; }
+nav a { color:var(--text); text-decoration:none; padding:6px 10px; border:1px solid #273043; border-radius:999px; font-size:13px; }
+nav a:hover { background:#1a1f27; }
+section.section { padding:24px 16px; }
+section.section h2 { font-size:20px; margin:0 0 12px; border-left:3px solid var(--accent); padding-left:10px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:var(--gap); }
+.card { perspective:1000px; }
+.card-inner { position:relative; width:100%; padding-top:130%; transform-style:preserve-3d; transition:transform .6s; }
+.card.is-flipped .card-inner, .card:focus .card-inner { transform:rotateY(180deg); }
+.card-front, .card-back { position:absolute; inset:0; backface-visibility:hidden; border-radius:12px; overflow:hidden; background:var(--card); border:1px solid #273043; }
+.card-front img, .card-front .ph { width:100%; height:100%; object-fit:cover; display:flex; align-items:center; justify-content:center; color:var(--muted); }
+.card-back { transform:rotateY(180deg); display:flex; flex-direction:column; }
+.card-back .content { padding:12px; overflow:auto; -webkit-overflow-scrolling:touch; }
+.card-back .meta h3 { margin:0; font-size:14px; line-height:1.3; }
+.card-back .sci { margin:4px 0 0; color:var(--muted); font-size:12px; }
+.card-back .desc { margin:8px 0 0; font-size:12px; color:var(--text); line-height:1.5; }
+footer { color:var(--muted); font-size:12px; padding:24px 16px; border-top:1px solid #1f2430; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Big Nine</h1>
+      <nav><a href="big-five.html">Big Five</a> <a href="big-nine.html">Big Nine</a> <a href="all-animals.html">All Animals</a> <a href="all-birds.html">All Birds</a></nav>
+      <div class="legend" style="color:var(--muted);font-size:12px;margin-top:8px;">点击卡片查看/返回；背面可滚动查看完整简介。</div>
+    </div>
+  </header>
+  <main class="container">
+    <section class="section">
+      <div class="grid"><div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image1.jpeg" alt="Elephant（非洲象）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Elephant（非洲象）</h3>
+          <p class="sci">Loxodonta Africana</p>
+        </div>
+        <p class="desc">非洲最大陆生动物，群居温顺。 African Elephants are the world&#x27;s largest land animals, weighing up to (6.6 tons). They are one of the most unique-looking animals, too. With their characteristic long noses, or trunks; large, floppy ears; and wide, thick legs, there is no other animal with a similar physique. The African Elephant is an intelligent, sociable and familial animal, and despite the threat it attracts due to its Ivory, the great news is that numbers are up in Kenya over the last couple of years. They are found in large numbers in Amboseli and Masai Mara among other parks and reserves in Kenya. Read more about the African Elephant here.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image2.jpeg" alt="African Buffalo（非洲水牛）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>African Buffalo（非洲水牛）</h3>
+          <p class="sci">Syncerus caffer</p>
+        </div>
+        <p class="desc">性情暴躁，群体防御力强。 African Bufallo is one of the ´´Big Five´´ and is often referred to as one the most dangerous animals in Africa. There are four subspecies of African Bufallo and Cape Bufallo is the most common of the four. They’re distinguished by coloring, size, and even horn shape. There’s also the forest buffalo, the West Africa savanna buffalo, and the Central Africa savanna buffalo. Buffalo are often pictured covered in mud with a bird on their back. The mud helps buffalo get rid of ticks and parasites that hasp onto their skin. Both Male and Female Bufallo has large horns which they use as weapon and for defense. African Bufallos have excellent eyesight, hearing, and a sense of smell that helps them detect the presence of lions, their greatest enemies. They communicate mostly through ritualized body movements and postures. These animals appears in great numbers in all major parks in Kenya, with the exception of Nairobi National Park.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image3.jpeg" alt="Lion（狮子）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Lion（狮子）</h3>
+          <p class="sci">Panthera Leo</p>
+        </div>
+        <p class="desc">群居顶级捕食者，雌狮主攻。 Lions are the largest of Africa&#x27;s big cats and the only cats that live in groups, which are called prides. It is estimated that there are close to 2,000 in Kenya&#x27;s National Reserves and Parks. In Masai Mara National Reserve and surrounding conservancies that border the reserve the estimated number of lion population is close to 850 to 900. The &#x27;Mara&#x27; as it is also known is generally considered one of the best places in Kenya and East Africa to see these magnificent animals in the wild on a Safari. Individual Lions (males) can hold huge territories ranging from 30 to 400 square kilometers. The lionesses (females) take the lead when it comes to hunting down the prey. From time to time the Males will assist with a hunt. Read more about [Masai Mara Lions](https://www.masaimara.travel/lions-masai-mara.php) in detail at this page.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image4.jpeg" alt="Leopard（非洲豹）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Leopard（非洲豹）</h3>
+          <p class="sci">Panthera pardus</p>
+        </div>
+        <p class="desc">独居善爬树，夜间捕猎。 The Leopard (Panthera Pardus) is counted as one of the Big Cats and is one of the five species in the genus Panthera. Its distinguished by its well-camouflaged fur, opportunistic hunting behaviour, broad diet, strength, and its ability to adapt to a variety of habitats ranging from rainforest to steppe, including arid and montane areas. Leopards are spectacular hunters, famous for their incredible agility and strength to climb trees while dragging a kill that is sometimes heavier than their body weight and they can run at speeds of up to 58 kilometres per hour. Though Leopards can be found in healthy numbers in some the major parks in Kenya, these elusive animals are nonetheless listed as vulnerable on the IUCN Red List because leopard populations are threatened by human encroachment and habitat loss. Leopards almost always hunt on their own and are by nature &#x27;shy&#x27;, preferring to hunt at night.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image5.jpeg" alt="Rhino（犀牛）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Rhino（犀牛）</h3>
+          <p class="sci">Rhinocerotidae</p>
+        </div>
+        <p class="desc">厚皮有角，受盗猎威胁。 Rhino is one of the five extant species of odd-toed ungulates in the family Rhinocerotidae, as well as any of the numerous extinct species. Black Rhinos which are found in large numbers in Ol Pejeta and Lewa Conservancy as well as other parks are smaller than the white rhinos commonly found at Lake Nakuru. Black Rhino are also more aggresive species compared to White Rhino, and they use their horns during mating and fighting, as well as when defending themselves from predators. They also use their hooked lip to browse shrubs and prefer thick bush habitat.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image6.jpeg" alt="Cheetah（猎豹）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Cheetah（猎豹）</h3>
+          <p class="sci">Acinonyx Jubantus</p>
+        </div>
+        <p class="desc">陆地速度最快，日间猎手。 The cheetah is the world&#x27;s fastest land mammal, capable of running at 80 to 128 km/h, and as such has several adaptations for speed, including a light build, long thin legs and a long tail. They are mainly active during the day and hunting is the major activity, with peaks during dawn and dusk. Similar in appearance to the leopards, the Cheetah is longer and lighter in the body. It has a slightly bowed back and a much smaller and rounder face. It stands around 80cm at the shoulder, measures around 210cm in length (including the tail) and weighs anything from 40 to 60kg. It&#x27;s found in small numbers in all of Kenya&#x27;s major game reserves.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image7.jpeg" alt="Giraffe（长颈鹿）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Giraffe（长颈鹿）</h3>
+          <p class="sci">Giraffa</p>
+        </div>
+        <p class="desc">世界最高哺乳动物，食树叶。 Giraffe ( Giraffa) is an African artiodactyl mammal, the tallest living terrestrial animal and the largest ruminant. They are known for their graceful movements even when running at their fastest speed of 50 to 60 km per hour. The giraffe&#x27;s chief distinguishing characteristics are its extremely long neck and legs, its horn-like ossicones, and its distinctive coat patterns. There are two main sub species of Giraffe found in Kenya, the Reticulated or Somali Giraffe in Northern Kenya, and the Maasai Giraffe in southern Kenya including Masai Mara. It is estimated that close to 33,000 Maasai giraffe are alive in the wild in Kenya.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image8.jpeg" alt="Hippo（河马）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Hippo（河马）</h3>
+          <p class="sci">Hippopotamus amphibius</p>
+        </div>
+        <p class="desc">水栖体型大，夜间上岸取食。 The Hippopotamus are large, round, water-loving animals that are native to Africa. They are commonly referred to as Hippo and are the third largest land mammal with the average adult males weighing in at close to 1500 kilos. Hippos typically inhabit swamps, rivers, and areas close to the lake shore, and remain cool by staying in the water during most of the day. They are found in greatest numbers in Lake Nakuru National Park and other major parks such as Masai Mara National Game Reserve, Amboseli, Nairobi and Tsavo National Parks as well as Lake Baringo.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image9.jpeg" alt="Zebra（斑马）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Zebra（斑马）</h3>
+          <p class="sci">Equus quagga</p>
+        </div>
+        <p class="desc">群居草食，黑白条纹识别。 Zebras are single-hoofed animals native to Africa. They are generally social animals that live in small harems to large herds. There are three species of zebras: the plains zebra, the mountain zebra and the Grévy&#x27;s zebra. Masai Mara is home to the plains Zebra while the Grevy&#x27;s Zebra with their unique thinner stripes are found in Samburu Reserve, Northern Kenya. Grévy&#x27;s zebra and the mountain zebra are endangered. While plains zebras are much more plentiful.</p>
+      </div>
+    </div>
+  </div>
+</div></div>
+    </section>
+  </main>
+  <footer class="container">Generated from Which animals can we see in Kenya.md</footer>
+  <script>
+// toggle flip on click or Enter key
+addEventListener('click', (e)=>{
+  const card = e.target.closest('.card');
+  if(card) card.classList.toggle('is-flipped');
+});
+addEventListener('keydown', (e)=>{
+  if((e.key==='Enter' || e.key===' ') && e.target.classList.contains('card')){
+    e.preventDefault();
+    e.target.classList.toggle('is-flipped');
+  }
+});
+</script>
+</body>
+</html>

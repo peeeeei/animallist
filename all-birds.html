@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>All Birds - Kenya Gallery</title>
+  <style>
+:root { --bg:#0f1216; --card:#151a21; --text:#e6e8eb; --muted:#9aa3ad; --accent:#2dd4bf; --gap:16px; }
+* { box-sizing: border-box; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'PingFang SC','Helvetica Neue',Arial,'Noto Sans'; background:var(--bg); color:var(--text); }
+header { position:sticky; top:0; backdrop-filter:saturate(180%) blur(10px); background:rgba(15,18,22,.7); border-bottom:1px solid #1f2430; z-index:10; }
+.container { max-width:1200px; margin:0 auto; padding:16px; }
+h1 { margin:8px 0; font-size:22px; }
+nav { display:flex; gap:12px; flex-wrap:wrap; }
+nav a { color:var(--text); text-decoration:none; padding:6px 10px; border:1px solid #273043; border-radius:999px; font-size:13px; }
+nav a:hover { background:#1a1f27; }
+section.section { padding:24px 16px; }
+section.section h2 { font-size:20px; margin:0 0 12px; border-left:3px solid var(--accent); padding-left:10px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:var(--gap); }
+.card { perspective:1000px; }
+.card-inner { position:relative; width:100%; padding-top:130%; transform-style:preserve-3d; transition:transform .6s; }
+.card.is-flipped .card-inner, .card:focus .card-inner { transform:rotateY(180deg); }
+.card-front, .card-back { position:absolute; inset:0; backface-visibility:hidden; border-radius:12px; overflow:hidden; background:var(--card); border:1px solid #273043; }
+.card-front img, .card-front .ph { width:100%; height:100%; object-fit:cover; display:flex; align-items:center; justify-content:center; color:var(--muted); }
+.card-back { transform:rotateY(180deg); display:flex; flex-direction:column; }
+.card-back .content { padding:12px; overflow:auto; -webkit-overflow-scrolling:touch; }
+.card-back .meta h3 { margin:0; font-size:14px; line-height:1.3; }
+.card-back .sci { margin:4px 0 0; color:var(--muted); font-size:12px; }
+.card-back .desc { margin:8px 0 0; font-size:12px; color:var(--text); line-height:1.5; }
+footer { color:var(--muted); font-size:12px; padding:24px 16px; border-top:1px solid #1f2430; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>All Birds</h1>
+      <nav><a href="big-five.html">Big Five</a> <a href="big-nine.html">Big Nine</a> <a href="all-animals.html">All Animals</a> <a href="all-birds.html">All Birds</a></nav>
+      <div class="legend" style="color:var(--muted);font-size:12px;margin-top:8px;">点击卡片查看/返回；背面可滚动查看完整简介。</div>
+    </div>
+  </header>
+  <main class="container">
+    <section class="section">
+      <div class="grid"><div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image46.jpeg" alt="Abdim&#x27;s Stork（阿布丁鹳）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Abdim&#x27;s Stork（阿布丁鹳）</h3>
+          <p class="sci">Ciconia abdimii</p>
+        </div>
+        <p class="desc">体型中等，腹部白色显著。 Abdim&#x27;s stork is a medium-sized, dark stork with a white belly. It is also called white-bellied stork, and is the smallest of all storks. It has grey long legs, red knees and feet, and a grey bill. It has red facial skin next to the eye and, during the breeding season, it has blue skin near the bill. The plumage is mostly black except for the white underparts. This species is widespread and common throughout its large range and can easily be seen in major National Parks and Reserves in Kenya.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image47.jpeg" alt="African Darter（非洲蛇鹈）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>African Darter（非洲蛇鹈）</h3>
+          <p class="sci">Anhinga rufa</p>
+        </div>
+        <p class="desc">游泳仅露颈，利喙刺鱼。 The African Darter sometimes called the snakebird, is a water bird of sub-Saharan Africa and Iraq. They are large, slim water birds that measure about 80 cm in length, including their long, rounded tails. These cormorant-like birds often swim with only the neck above water. They have very long and sharp beaks, which they use to spear their slippery fish prey. They are endemic to tropical sub-Saharan Africa, where they are widespread in freshwater wetlands, preferring placid to fast flowing waters. In Kenya you&#x27;ll mostly find these birds in Lake Baringo and Masai Mara Game Reserve.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image48.jpeg" alt="African Grey Hornbill（非洲灰犀鸟）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>African Grey Hornbill（非洲灰犀鸟）</h3>
+          <p class="sci">Tockus nasutus</p>
+        </div>
+        <p class="desc">灰色小型犀鸟，弯喙取食。 African grey hornbill is a medium sized bird, but one of the smaller hornbill species of the hornbill family. The plumage is mostly grey, with the head, wings and tails being a darker shade. The bill is dark, long and curved, with a small casque and cream coloured stripe running along the bill. The female has a red tip to the bill, with the upper mandible being pale yellow in colour. This hornbill is a widespread and common resident breeder in much of Sub-Saharan Africa. These hornbills mostly feed on insects, fruit and reptiles. They typically forage in trees.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image49.jpeg" alt="African Fish Eagle（非洲鱼鹰）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>African Fish Eagle（非洲鱼鹰）</h3>
+          <p class="sci">Haliaeetus vocifer</p>
+        </div>
+        <p class="desc">标志性白头，鸣声嘹亮。 African fish eagle is a large species of eagle with a mostly brown body and large powerful, black wings. The head, breast, and tail of are snow white, with the exception of the featherless face, which is yellow. These birds are found throughout sub-Saharan Africa wherever large bodies of open water occur that have an abundant food supply. Fish eagles are famously known for their distinct calls, which are often heard before the birds can be seen. In Kenya you&#x27;ll mostly find these birds in Lake Baringo and Masai Mara Game Reserve.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image50.jpeg" alt="African Harrier Hawk（非洲鹞雕）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>African Harrier Hawk（非洲鹞雕）</h3>
+          <p class="sci">Polyboroides typus</p>
+        </div>
+        <p class="desc">能攀爬取卵，适应城市林地。 African Harrier-Hawk is a medium-sized raptor, that is commonly found in areas that have more than 300mm of annual rain. The plumage is mostly brown with pale steaks on the head, breast and forewings. The belly is white with fine dark barring. The broad wings are pale grey with a black trailing edge fringed with a narrow white line. The tail is black with a single broad white band. Sexes are similar, but young birds have pale brown instead grey, and dark brown replacing black. It can be found in natural woodland, tree plantations and urban areas. Best places to spot this bird is Lake Nakuru National Park and Masai Mara Game Reserve.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image51.jpeg" alt="African Openbill Stork（非洲开嘴鹳）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>African Openbill Stork（非洲开嘴鹳）</h3>
+          <p class="sci">Anastomus lamelligerus</p>
+        </div>
+        <p class="desc">上下喙不合，食螺为主。 The african openbill is medium-sized stork bird, found in the sub-Saharan Africa. It is a species of stork in the family of Ciconiidae. It is a stork 80–94 cm long with a weight of 1–1.3 kg. Its adult plumage is generally black with purple and green iridescent highlights. The bill is brownish and notably large. The legs are black and the eye is grey. The juvenile plumage is more dull and brown, with areas of pale feather tips. African openbill feeds almostly exclusively on aquatic snails and freshwater mussels.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image52.jpeg" alt="African Spoonbill（非洲琵鹭）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>African Spoonbill（非洲琵鹭）</h3>
+          <p class="sci">Platalea alba</p>
+        </div>
+        <p class="desc">匙形喙扫食浅水。 African Spoonbill is a long-legged wading bird, that lives in marshy wetlands with some open shallow water and nests in colonies in trees or reedbeds. Its body is predominantly white, except for its red legs, face, and bill. This bird can be easily recognised by its uniquely spoon-shaped bill. Both the male and female birds are similar in appearance. The African Spoonbill&#x27;s diet consists mainly of fish and aquatic invertebrates such as crustaceans or shellfishes, insects, larvae, and mollusks. These birds are commonly found in several of countries in the southern part of Africa and can be spotted in Masai Mara Game Reserve, Kenya.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image53.jpeg" alt="African White Backed Vulture（白背兀鹫）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>African White Backed Vulture（白背兀鹫）</h3>
+          <p class="sci">Gyps africanus</p>
+        </div>
+        <p class="desc">群集食腐，濒危。 African White-backed vulture is the most widespread and common large vulture in Africa. It has a grey neck with a collar of white feathers at the top of their back and their other plumage is various shades of grey. They feed mostly from carcasses of animals and bone fragments. African white backed vultures are highly social and diurnal. They can be found in all Kenya&#x27;s National Parks and Reserves, one of them being Masai Mara Game Reserve, Kenya. The African White-Backed Vulture is one of a group of 8 species which have long necks that appear to be bald, but that are actually covered in a fine down. This absence of neck feathers allows the vulture to reach deep into a carcass without becoming dirty.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image54.jpeg" alt="Bateleur（短尾雕）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Bateleur（短尾雕）</h3>
+          <p class="sci">Terathopius ecaudatus</p>
+        </div>
+        <p class="desc">体型中等，翼短尾短。 The Bateleur is the most famous of the snake eagles, and is a medium-sized, short tailed and colorful species of Eagle. It has a glossy black head, neck, and underparts; a reddish brown back; whitish to red-brown shoulders; a bare red face; and powerful red-orange feet. Bateleurs are endemic to Africa and can be spotted in major national parks and reserves in Kenya.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image55.jpeg" alt="Black Chested Snake Eagle（黑胸蛇雕）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Black Chested Snake Eagle（黑胸蛇雕）</h3>
+          <p class="sci">Circaetus pectoralis</p>
+        </div>
+        <p class="desc">专食蛇类，也捕蜥蝙蝠。 Black Chested Snake Eagle is a large African bird of prey of the family Accipitridae. Is plumage mostly brown with yellow eyes and an unspotted white belly. In flight it has brown-barred white wings. It is widespread in lightly wooded areas of Kenya, but not that commonly spotted. It eats snakes but also lizards and bats. It is easily identified by its dark brown head and chest, to which it owes its name.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image56.jpeg" alt="Black Headed Heron（黑头鹭）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Black Headed Heron（黑头鹭）</h3>
+          <p class="sci">Ardea melanocephala</p>
+        </div>
+        <p class="desc">大形鹭类，草原湿地常见。 Black-headed Herons is wading bird of the heron family, it is a large bird, standing 85 cm tall, and it has a 150 cm wingspan. Its plumage is largely grey above, and paler grey below. It has a powerful dusky bill. These birds are common and widespread through much of Africa south of the Sahara, including Masai Mara Game Reserve,Kenya.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image57.jpeg" alt="Black-Winged Kite（黑翅鸢）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Black-Winged Kite（黑翅鸢）</h3>
+          <p class="sci">Elanus caeruleus</p>
+        </div>
+        <p class="desc">悬停猎鼠，广布开阔地。 Black-Winged Kite also known as the black-shouldered kite, is a long-winged raptor, predominantly grey or white with black shoulder patches, wing tips and eye stripe. The sexes are alike in plumage. They are commonly found in open savannah, semi-desert, and agricultural lands with scattered woods; frequently seen on exposed perches and you&#x27;ll be able to spot them in the Masai Mara, Samburu, and other parks in Kenya. They have varied flight style, hovering like a kestrel or gliding like a harrier with deep wingbeats and raised wings.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image58.jpeg" alt="Coqui Francolin（科奎鹌鹑雉）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Coqui Francolin（科奎鹌鹑雉）</h3>
+          <p class="sci">Francolinus coqui</p>
+        </div>
+        <p class="desc">体小地栖，草丛隐蔽。 The Coqui francolin (Peliperdix coqui) is a species of bird in the family Phasianidae. It is a small beautifully-patterned francolin bird with yellow or brown head; reddish brown eyes; grey and yellow bill; black and white throat; yellow legs with white and black stripes underparts. Mainly found in Africa&#x27;s southern half but is also sparsely present in the western Sahel and Ethiopia. It is believed to be the most widespread francolin in Africa. It is mostly resident throughout its range and can be found in Masai Mara Game Reserve, Kenya.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image59.jpeg" alt="Egyptian Goose（埃及雁）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Egyptian Goose（埃及雁）</h3>
+          <p class="sci">Alopochen aegyptiacus</p>
+        </div>
+        <p class="desc">面具斑明显，常成对活动。 The Egyptian Goose have long necks, long pink legs, a pink bill and brown eye patches encircling each eye. They are easily identified by a brown patch in the middle of the chest. It eats grasses, seeds, and leaves. Occasionally, it will eat locusts, worms, or other small animals. It is actually part of the shelduck family and pairs for life. These birds are very common in Masai Mara Game Reserve, Kenya.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image60.jpeg" alt="Fischer&#x27;s Sparrow Lark（费氏麻雀百灵）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Fischer&#x27;s Sparrow Lark（费氏麻雀百灵）</h3>
+          <p class="sci">Eremopterix leucopareia</p>
+        </div>
+        <p class="desc">短草地常见，小型百灵。 Fischer&#x27;s sparrow-lark is a species of passerine bird in the family Alaudidae. It can be distinguished from the similar chestnut-headed sparrow-lark by the absence of a white patch on the crown of its head. This inconspicuous dull-coloured bird is found on short grass plains and its natural habitat is subtropical or tropical dry lowland grassland. Best places to spot this bird includes Nairobi National Park and Northern Masai Mara Game Reserve, Kenya.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image61.jpeg" alt="Green Wood Hoopoe（绿戴胜）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Green Wood Hoopoe（绿戴胜）</h3>
+          <p class="sci">Phoeniculus purpureus</p>
+        </div>
+        <p class="desc">树干探食昆虫，群体活动。 The Green Wood Hoopoe formerly known as red-billed wood hoope, is an insect-eating species. It feeds mainly on the ground, termite mounds, or on tree trunks, and forms flocks outside the breeding season. Its specialised claws enable it to cling easily to the underside of branches while closely inspecting the bark for insects. The bird has red feet and a long, decurved, red-orange bill and flies heavily, with the long floppy, white-tipped tail dangling behind. It is a common resident breader in Lake Baringo and Masai Mara Game Reserve, Kenya.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image62.jpeg" alt="Grey Headed Kingfisher（灰头翠鸟）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Grey Headed Kingfisher（灰头翠鸟）</h3>
+          <p class="sci">Halcyon leucocephala</p>
+        </div>
+        <p class="desc">离水捕虫捕蜥，色彩鲜明。 The Grey-headed Kingfisher has a grey head and chest, coppery belly, blue wing and bright red bill. Unlike many other kinds kingfishers, this large, striking bird hunts away from water catching large insects and small reptiles instead like lizards. These birds lives in dry woodlands, usually near a river or lake and can be found throughout Africa.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image63.jpeg" alt="Grey Kestrel（灰隼）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Grey Kestrel（灰隼）</h3>
+          <p class="sci">Falco ardosiaceus</p>
+        </div>
+        <p class="desc">体型小，栖居稀树草原。 The grey kestrel is a fairly small, stocky kestrel with a large, flat-topped head and fairly short wings that don&#x27;t reach past the tip of the tail when at rest. On the underparts, flight feathers and rectrices are barred pale grey. The large head is slightly paler than the body. The bill is black with yellow cere. The eyes are brown, surrounded by broad bare bright yellow eyering. Legs and feet are yellow too. They inhabits savannas, open woodland and forest clearings and can be found in Masai Mara Game Reserve, Kenya.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image64.jpeg" alt="Hamerkop（锤头鹳）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Hamerkop（锤头鹳）</h3>
+          <p class="sci">Scopus umbretta</p>
+        </div>
+        <p class="desc">头冠似锤，筑巨大巢。 Hamerkop is a medium-sized wading bird measuring 47 – 56 centimetres in length and weighing around 415 – 430 grams. The colour of its plumage is brown and there are hints of iridescent purple on its back. The tail is faintly barred with darker brown. It has a long and flat bill that is slightly hooked at the tip and there is a square, blunt crest on its nape. Their legs and neck are shorter in length compared to other wading birds. Hamerkops prefers wetland habitats and they are abundant around their habitat. These birds can be spotted in major of national parks and reserves in Kenya.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image65.jpeg" alt="Hadeda Ibis（哈德达鹮）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Hadeda Ibis（哈德达鹮）</h3>
+          <p class="sci">Bostrychia hagedash</p>
+        </div>
+        <p class="desc">清晨鸣叫嘹亮，常见城郊。 Hadeda ibis also known as Hadada, is a large about 76 cm long, grey-to-partly brown species of ibis. It has stout legs and a typical down-curved bill, the wing coverts are iridescent with a green or purple sheen. It is named for its loud three to four note calls (ha-da-da) uttered in flight especially in the mornings and evenings when they fly out or return to their roost trees. Hadadas can be found in many African countries and throughout open grasslands, savanna and wetlands, as well as urban parks, school fields, green corridors and large gardens.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image66.jpeg" alt="Kori Bustard（科里鸨）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Kori Bustard（科里鸨）</h3>
+          <p class="sci">Ardeotis kori</p>
+        </div>
+        <p class="desc">非洲最大飞行鸟之一，地栖。 The kori bustard is arguably the largest flying bird native to Africa. The bird lives on the ground and is reluctant to fly unless in serious danger. Their upper plumage is buff and gray, finely barred with black, which allows them to blend in with their environment. These birds are very common in Kenya particularly in Masai Mara National Reserve and much of Africa in open, semi-arid or seasonally dry habitats. They are usually residential in their range, with some random, nomadic movement following rainfall.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image67.jpeg" alt="Lappet Faced Vulture（肉垂兀鹫）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Lappet Faced Vulture（肉垂兀鹫）</h3>
+          <p class="sci">Torgos tracheliotus</p>
+        </div>
+        <p class="desc">头颈裸露，力量强大。 Lappet faced vulture sometimes called Nubian vulture, is a scavenging bird, feeding mostly from animal carcasses, which it finds by sight or by watching other vultures. It is easily recognized due its large size, bare pink head and the fleshy folds of skin, called lappets, on each side of its neck. This vulture prefers to live in dry savannah, thornbush, arid plains, deserts with scattered trees in wadis and open mountain slopes. Lappet faced vulture is found in most of Kenya&#x27;s National parks and reserves including the Masai Mara National Reserve.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image68.jpeg" alt="Lilac Breasted Roller（紫胸佛法僧）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Lilac Breasted Roller（紫胸佛法僧）</h3>
+          <p class="sci">Coracias caudata</p>
+        </div>
+        <p class="desc">体色绚丽，喜停枝头。 Lilac-breasted Roller is unofficially considered the national bird of Kenya and is a common sight on tree-tops in almost all national parks. They are african member of the roller family of birds. Widely distributed in sub-Saharan Africa and prefers open woodland and savanna. These colorful little guys eat insects, small rodents, and lizards.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image69.jpeg" alt="Marabou Stork（秃鹳）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Marabou Stork（秃鹳）</h3>
+          <p class="sci">Leptopilos crumeniferus</p>
+        </div>
+        <p class="desc">体型巨，常食腐。 Marabou stork is a large wading, unusual looking bird with hollow legs and toe bones, and is bald-headed. The African Marabou storks reach a wing span of 2.6 metres and a height of 1.5 metres . They are bare, dull and have a red-spotted head with long black legs and massive conical bill. They are mainly dark grey above and white below. They mainly feed on carrion and scraps.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image70.jpeg" alt="Martial Eagle（武士雕）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Martial Eagle（武士雕）</h3>
+          <p class="sci">Polemaetus bellicosus</p>
+        </div>
+        <p class="desc">大型猛禽，草原顶级掠食者。 The Martial Eagle is Africa’s largest eagle, weighing almost 14 pounds (6.5 kg) and has a wingspan of 2.6 metres. Its plumage is mostly dark grey-brown coloration on the upperparts, head and upper chest, with slightly lighter edging to these feathers. The underparts are white with blackish-brown spotting while the underwing coverts are brown, with pale flight feathers being streaked with black. They are residents of Africa&#x27;s savanna grasslands, and can be spotted in Masai Mara Game Reserve.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image71.jpeg" alt="Ostrich（鸵鸟）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Ostrich（鸵鸟）</h3>
+          <p class="sci">Struthio camelus</p>
+        </div>
+        <p class="desc">不会飞，奔跑极快。 The flightless Ostrich is the largest living bird. It has long legs and a long neck that protrudes from a round body. It can grow up to 9 feet (2.7 meters) tall and weighs up to 320 lbs. Although they can&#x27;t fly, ostrich are fleet, strong runners. They can walk at top speed of up to 43 miles an hour and run over distance at 31 miles an hour. It is widely distributed throughout the savannah plains in Kenya, and is commonly seen in the southern parks and reserves - Masai Mara, Amboseli and Tsavo. Ostrich are classified in the ratite group of birds, all extant species of which are flightless, including the kiwis, emus, and rheas.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image72.jpeg" alt="Rufous Naped Lark（棕颈百灵）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Rufous Naped Lark（棕颈百灵）</h3>
+          <p class="sci">Mirafra africana</p>
+        </div>
+        <p class="desc">鸣声清脆，开阔地栖。 The rufous-naped lark or rufous-naped bush lark, has a white coloured throat, pink legs and a brown coloured head and back as well as the bill. The eyes are brown. It is a widespread and conspicuous species of lark in the lightly wooded grasslands, open savannas and farmlands of the Afrotropics. They have consistently rufous outer wings and a short erectile crest, but the remaining plumage hues and markings are individually and geographically variable. They can be spotted in Kenyan highlands, Lake Naivasha, Amboseli and Masai Mara Game Reserve.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image73.jpeg" alt="Ruppell&#x27;s Vulture（鲁氏兀鹫）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Ruppell&#x27;s Vulture（鲁氏兀鹫）</h3>
+          <p class="sci">Gyps rueppellii</p>
+        </div>
+        <p class="desc">高空翱翔能手，食腐。 The Ruppell&#x27;s Vulture is a large vulture that can be found throughout the Sahel region of central Africa. It holds the record as the highest flying bird in the world, with a wingspan of 8 feet. Their plumage is mottled brown or black with a pale brown underside and pale coloured fluff covering their head and neck. They have a white collar at the base of their neck and their crop patch is deep brown. They have excellent eyesight with their eyes coloured yellow or amber. Rüppell&#x27;s Vultures are scavengers and they feed on the carcasses of dead animals. They can eat the hide and even bones of a carcass.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image74.jpeg" alt="Secretary bird（秘书鸟）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Secretary bird（秘书鸟）</h3>
+          <p class="sci">Sagittaruis serpentaruis</p>
+        </div>
+        <p class="desc">高腿步行猛禽，善捕蛇。 Secretary bird is a long-legged bird with a slender but powerful body 1.2 m long and a 2.1-metre wingspread. It is the only living bird of prey of terrestrial habits,easily recognised by its eagle-like body on crane-like legs with a hooked bill and rounded wings. Endemic to Africa, it is usually found in the open grasslands and savannah of the sub-Saharan region. These birds can be spotted in some parts of Masai Mara Game Reserve, Kenya.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image75.jpeg" alt="Southern Ground Hornbill（南方地犀鸟）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Southern Ground Hornbill（南方地犀鸟）</h3>
+          <p class="sci">Bucorvus leadbeateri</p>
+        </div>
+        <p class="desc">地面取食，群居鸣叫洪亮。 Southern Ground Hornbill is the largest species of hornbill on Worlwide. Easily recognized by its jet-black feathers, yellow eyes, and bright red throat. Their sex can be identified by the color of their throats, where the male&#x27;s is pure red and the female&#x27;s is a deep violet-blue. These birds lives in open habitats, travels in groups and feeds on insects, small reptiles, and mammals. It&#x27;s a fun bird to watch if you can spot it.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image76.jpeg" alt="Southern Masked Weaver（南方织布鸟）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Southern Masked Weaver（南方织布鸟）</h3>
+          <p class="sci">Ploceus velatus</p>
+        </div>
+        <p class="desc">编织悬巢，群栖树上。 The Southern Masked Weaver is 11-14.5 cm long with a short, strong, conical bill and pinkish brown legs. The adult male in breeding plumage has a black face, throat and beak, red eye, bright yellow head and underparts, and a plain yellowish-green back. The female has a pinkish-brown bill, brown or red-brown eye and is dull greenish-yellow, streaked darker on the upper back. The throat is yellowish, fading to off-white on the belly. The non-breeding male resembles the female but retains the red eye. They are found in a wide range of habitats, including shrubland, savanna, grassland, open woodland, inland wetlands and semi-desert areas. These birds are common sight on tree-tops in many of Kenya&#x27;s national parks/reserves particularly Masai Mara National Reserve.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image77.jpeg" alt="Speckled Mousebird（斑鼠鸟）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Speckled Mousebird（斑鼠鸟）</h3>
+          <p class="sci">Colius striatus</p>
+        </div>
+        <p class="desc">长尾攀援，群体取食果实。 The speckled mousebird is the largest species of mousebird, about 35 cm long, with the tail half its length, and weighs about 57 grams. It is dull-mousy brown in overall color on the back and on the head. The bill is black on the upper part and is a pinkish color on the lower part. It is as one of the most common bird and can be found particularly in Masai Mara National Reserve. It is an active and playful-seeming bird with very long tail and the alert crest make them fun to watch.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image78.jpeg" alt="Spotted Thick Knee（斑厚膝鸻）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Spotted Thick Knee（斑厚膝鸻）</h3>
+          <p class="sci">Burhinus capensis</p>
+        </div>
+        <p class="desc">夜行隐蔽，草地难察。 The spotted thick-knee is a medium sized bird, stands about 45 cm in height and weighs between 365 - 450 gram. It has long legs and brown-and-white speckled plumage which provides camouflage, making it difficult to spot the bird in the grasslands and savannas where it roams. The spotted thick-knee is nocturnal and squats on the ground during the daytime, making it difficult to spot. The birds are capable of flying but perefer walking. They hunts exclusively on the ground, feeding on insects, small mammals and lizards. These birds can be found in Masai Mara National Reserve, Kenya.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image79.jpeg" alt="Striped Kingfisher（条纹翠鸟）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Striped Kingfisher（条纹翠鸟）</h3>
+          <p class="sci">Halcyon chelicuti</p>
+        </div>
+        <p class="desc">体小条纹淡雅，林缘栖息。 The Striped Kingfisher is the smallest and least colourful of the non-aquatic kingfishers with powder-blue tail and flight feathers, creamy collar, dark eye-stripe, and streaky brown crown. It is common in the dry bush and open woodlands, especially around the Masai Mara.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image80.jpeg" alt="Superb Starling（丽色椋鸟）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Superb Starling（丽色椋鸟）</h3>
+          <p class="sci">Lamprotornis superbus</p>
+        </div>
+        <p class="desc">羽色金属光泽，群居常见。 The Superb Starling is a small but distinctive bird, with iridescent blue-to-green back, upper breast, wings, and tail. The adult head is black, the belly is red-orange and the undertail coverts and the wing linings are white. The superb starling has a long hollow bill. They are very conspicuous birds of open disturbed habitats. Commonly found in East Africa and if you&#x27;re in Kenya, it&#x27;s very likely you&#x27;ll see their colorful body punctuated by a white breast band.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image81.jpeg" alt="Usambiro Barbet（乌桑比罗拟啄木鸟）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Usambiro Barbet（乌桑比罗拟啄木鸟）</h3>
+          <p class="sci">Trachyphonus usambiro</p>
+        </div>
+        <p class="desc">体小色艳，啄食果虫。 Usambiro barbet is 18-19 cm long and weighs 37–50.5 g . The head is yellow with black spots and the wings are black with white spots. The breast is also yellow with a dark breast band. The belly is pale yellow with a reddish vent. It is a subspecies of bird in the African barbet family Lybiidae. Mainly found in southern Kenya and northern Tanzania, and can be spotted in Maasai Mara National Reserve and Serengeti National Park. The species inhabits open areas including savannah, grassland, shrubland and pastures. Mainly feeds on seeds, fruit and a wide range of insects. Read more about [Serengeti Animals](https://www.serengetinationalpark.travel/animals-wildlife.php) here.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" tabindex="0">
+  <div class="card-inner">
+    <div class="card-front"><img src="assets/kenya-animals/media/image82.jpeg" alt="Vulturine Guineafowl（秃鹫珠鸡）" loading="lazy" /></div>
+    <div class="card-back">
+      <div class="content">
+        <div class="meta">
+          <h3>Vulturine Guineafowl（秃鹫珠鸡）</h3>
+          <p class="sci">Acryllium vulturinum</p>
+        </div>
+        <p class="desc">蓝颈披羽，群体奔走。 Vulturine Guineafowl is the largest extant species of guineafowl and has a longer wings, neck, legs and tail than other guineafowl. It is a stunning bird, with a gorgeous body and typically &quot;homely&quot; looking bald head. It eats seeds, worms, and insects. Common in Kenya&#x27;s National Parks and Reserves including Samburu and Masai Mara National Reserve and Tsavo East National Park.</p>
+      </div>
+    </div>
+  </div>
+</div></div>
+    </section>
+  </main>
+  <footer class="container">Generated from Which animals can we see in Kenya.md</footer>
+  <script>
+// toggle flip on click or Enter key
+addEventListener('click', (e)=>{
+  const card = e.target.closest('.card');
+  if(card) card.classList.toggle('is-flipped');
+});
+addEventListener('keydown', (e)=>{
+  if((e.key==='Enter' || e.key===' ') && e.target.classList.contains('card')){
+    e.preventDefault();
+    e.target.classList.toggle('is-flipped');
+  }
+});
+</script>
+</body>
+</html>
