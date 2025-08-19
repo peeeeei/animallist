@@ -8,12 +8,57 @@
 :root { --bg:#0f1216; --card:#151a21; --text:#e6e8eb; --muted:#9aa3ad; --accent:#2dd4bf; --gap:16px; }
 * { box-sizing: border-box; }
 body { margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'PingFang SC','Helvetica Neue',Arial,'Noto Sans'; background:var(--bg); color:var(--text); }
-header { position:sticky; top:0; backdrop-filter:saturate(180%) blur(10px); background:rgba(15,18,22,.7); border-bottom:1px solid #1f2430; z-index:10; }
+header { 
+  position:sticky; 
+  top:0; 
+  backdrop-filter:saturate(180%) blur(10px); 
+  background:rgba(15,18,22,.85); 
+  border-bottom:1px solid #1f2430; 
+  z-index:10;
+  box-shadow:0 2px 8px rgba(0,0,0,0.5);
+  padding-bottom: 4px;
+}
 .container { max-width:1200px; margin:0 auto; padding:16px; }
-h1 { margin:8px 0; font-size:22px; }
+h1 { margin:8px 0; font-size:28px; font-weight:600; }
 nav { display:flex; gap:12px; flex-wrap:wrap; }
-nav a { color:var(--text); text-decoration:none; padding:6px 10px; border:1px solid #273043; border-radius:999px; font-size:13px; }
-nav a:hover { background:#1a1f27; }
+nav a { 
+  color:var(--text); 
+  text-decoration:none; 
+  padding:8px 16px; 
+  border:1px solid #273043; 
+  border-radius:20px; 
+  font-size:14px; 
+  background:#1a1f27;
+  transition:background 0.3s, color 0.3s;
+}
+nav a:hover { 
+  background:var(--accent); 
+  color:#000; 
+}
+/* main page links grid */
+.links { 
+  display:grid; 
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); 
+  gap:var(--gap); 
+  margin-top:24px;
+}
+.link-card { 
+  background:var(--card); 
+  border:1px solid #273043; 
+  border-radius:12px; 
+  padding:20px; 
+  text-align:center; 
+  font-size:16px; 
+  transition:transform 0.2s, background 0.3s;
+}
+.link-card:hover { 
+  transform:translateY(-4px); 
+  background:#1a1f27; 
+}
+.link-card a { 
+  color:var(--text); 
+  text-decoration:none;
+}
 section.section { padding:24px 16px; }
 section.section h2 { font-size:20px; margin:0 0 12px; border-left:3px solid var(--accent); padding-left:10px; }
 .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:var(--gap); }
@@ -39,10 +84,12 @@ footer { color:var(--muted); font-size:12px; padding:24px 16px; border-top:1px s
   </header>
   <main class="container">
     <section class="section"><h2>请选择板块</h2>
-      <p><a href="big-five.html">Big Five</a></p>
-      <p><a href="big-nine.html">Big Nine</a></p>
-      <p><a href="all-animals.html">All Animals</a></p>
-      <p><a href="all-birds.html">All Birds</a></p>
+      <div class="links">
+        <div class="link-card"><a href="big-five.html">Big Five</a></div>
+        <div class="link-card"><a href="big-nine.html">Big Nine</a></div>
+        <div class="link-card"><a href="all-animals.html">All Animals</a></div>
+        <div class="link-card"><a href="all-birds.html">All Birds</a></div>
+      </div>
     </section>
   </main>
 </body>
